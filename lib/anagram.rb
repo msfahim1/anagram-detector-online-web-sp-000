@@ -5,8 +5,13 @@ def initialize(word)
     @word = word
   end
 
-	def match(arry)
-		array.select do | elemen |(@word.split("").sort)==(element.split("").sort)
-		end
-	end
+	def match(array)
+	 arr = []
+	 array.each do |anagram|
+		 if anagram.split("").sort == @word.split("").sort
+			 arr << anagram
+		 end
+	 end
+	 arr
+ end
 end

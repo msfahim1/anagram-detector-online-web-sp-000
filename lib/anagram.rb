@@ -8,4 +8,5 @@ def initialize(word)
 	def match(arry)
 		array.select do | elemen |(@word.split("").sort)==(element.split("").sort)
 		end
+	end
 end
